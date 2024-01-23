@@ -3,21 +3,48 @@
     padding: 0; /* сброс внутреннего отступа */
     box-sizing: border-box; /* padding входит в ширину/высоту блока */
 }
+header {
+    background-color: #f2f2f2;
+    padding: 20px 0; /* сверху/снизу - 20px, справа/слева - 0 */
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+h1:hover {
+    color: red;
+}
 .container {
+    width: 85%;
+    background-color: #f2f2f2;
+    margin: auto; /* центрирование блока */
+    padding: 20px;
     display: flex;
     justify-content: center; /* выравнивание по горизонтали */
     flex-wrap: wrap; /* убираем поведение flex в одну строку */
 }
 .item {
     width: calc(50% - 20px); /* ширина */
-    height: 200px; /* высота */
+    height: 250px; /* высота */
     background-color: #ee7d28; /* цвет фона */
     margin: 10px; /* внешний отступ */
+    box-shadow: 8px 7px 55px -1px rgba(0, 0, 0, 0.33);
+    transition: 1s;
+}
+.item:hover {
+    transform: scale(1.1) rotate(10deg); /* scale - масштабирование, rotate - поворот */
 }
 .item-1 {
-    background-image: url(./img1.jpg); /* добавляем фоновую картинку */
-    
+    background-image: url(./images/img1.jpg); /* добавляем фоновую картинку */
+    background-size: cover; /* масштабируем */
+    /* background-repeat: no-repeat; /* не повторять фон */ 
+    /* background-position: center; разместить фон по центру  */
 }
+/*
+    Псевдоклассы - селектор особого состояния элемента
+        :hover - состояние при наведении мыши
+*/
 
 /*
     Задача. Добавить картинки для 8 блоков

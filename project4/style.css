@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* padding включается в размер блока */
+}
+section {
+    background-color: #EEEFF1;
+    padding: 100px 0 135px;
+}
+h1 {
+    text-align: center;
+}
+p {
+    margin: 50px auto 65px; /* 50px - сверху, auto - справа/слева, 65px - снизу */
+    width: 30%;
+    color: #727272;
+    text-align: center;
+}
+form {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; /* размещаем элементы в колонку */
+}
+.form-control input {
+    padding: 20px;
+}
+textarea {
+    margin: 20px 0 50px; 
+}
+/* 
+    Зарегистрироваться на фигме. 
+        https://www.figma.com/file/qydtVQVKUEcOnOvjfXaAXh/Templates-%233.-More-on-Figma.info-(Copy)-(Copy)-(Copy)-(Copy)?type=design&node-id=0-1&mode=design&t=h3S8o1xilbDF6jB9-0
+*/
