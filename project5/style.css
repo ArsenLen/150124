@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #1ABC9C;
+    padding: 15px 0;
+}
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.nav-link {
+    font-size: 24px;
+    color: black; /* цвет ссылки */
+    text-decoration: none; /* убираем нижнее подчеркивание */
+    margin-right: 20px;
+}
+.social-icon:not(:last-child) {
+    margin-right: 20px;
+}
+.about {
+    display: flex;
+    align-items: center;
+}
+.about-img {
+    width: 50%;
+}
+.about-info {
+    width: 50%;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 400; /* жирность текста */
+    text-align: center;
+    margin-bottom: 35px;
+}
+.about-descr {
+    padding: 0 65px;
+    font-size: 20px;
+    text-align: justify; /* justify - выравнивание по ширине */
+}
+.projects {
+    padding: 125px 0;
+    background-color: #DCFFEB;
+}
+.projects-title {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.projects-list { 
+    display: flex;
+    gap: 40px; /* gap - отступы между flex-элементами */
+}
+.project {
+    background-image: url(./images/project-img.png); /* фон блока */
+    width: 33%;
+    aspect-ratio: 436/376; /* соотношение сторон 1.15/1 */
+    background-size: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.project-hover {
+    background: rgba(0, 0, 0, 0.38);
+    color: white;
+    padding: 30px 35px 15px;
+    opacity: 0; /* прозрачность 0 */
+}
+.project:hover .project-hover {
+    opacity: 1; /* возвращаем прозрачность на 1 */
+}
+.project-hover-title {
+    font-size: 24px;
+}
+/*
+    height: calc(33vw * 436 / 376)
+
+    Псевдоклассы:
+    1. :not - не
+    2. :last-child - последний элемент
+
+    :first-child - первый элемент
+    :last-child - последний элемент
+*/
+/* Задача. Разместить блоки внутри header как на макете по горизонтали с одинаковыми отступами
+    между ними
+*/
