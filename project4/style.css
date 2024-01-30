@@ -1,34 +1,65 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* padding включается в размер блока */
+    box-sizing: border-box; /* padding не добавляется к размеру элемента, а берется изнутри */
 }
 section {
     background-color: #EEEFF1;
-    padding: 100px 0 135px;
+    padding: 100px 0; /* 100px - сверху и снизу, 0 - справа и слева */
 }
 h1 {
+    font-size: 32px;
     text-align: center;
 }
 p {
-    margin: 50px auto 65px; /* 50px - сверху, auto - справа/слева, 65px - снизу */
     width: 30%;
     color: #727272;
     text-align: center;
+    margin: 50px auto 65px; /* 50px - сверху, auto - справа/слева, 65px - снизу */
 }
 form {
     width: 30%;
-    margin: auto;
     display: flex;
-    flex-direction: column; /* размещаем элементы в колонку */
+    flex-direction: column; /* разместить элементы в колонку */
+    margin: auto;
+}
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 30px; */
 }
 .form-control input {
+    width: calc(50% - 15px); 
     padding: 20px;
+    border: none; /* сброс границы */
+    outline: none; /* сброс границы инпута, который появляется при нажатии на него (фокус) */
+    caret-color: #34547A; /* цвет курсора в input */
+}
+.form-control input:focus {
+    border: 1px solid #34547A; /* границы input при фокусе */
 }
 textarea {
-    margin: 20px 0 50px; 
+    padding: 20px;
+    border: none;
+    outline: none;
+    margin: 20px 0 50px; /* 20px - сверху, 0 - справа/слева, 50px - снизу */
+    resize: none;  /* убираем стрелку увеличения textarea */
 }
+input[type="submit"] {
+    width: 50%;
+    margin: auto;
+    padding: 20px 0; /* 20px - сверху/снизу, 0 - справа/слева */
+    border: none;
+    outline: none;
+    background-color: #34547A;
+    color: white;
+    text-transform: uppercase; /* текст в верхнем регистре */
+    letter-spacing: 2.1px; /* расстояние между буквами */
+}
+
 /* 
-    Зарегистрироваться на фигме. 
-        https://www.figma.com/file/qydtVQVKUEcOnOvjfXaAXh/Templates-%233.-More-on-Figma.info-(Copy)-(Copy)-(Copy)-(Copy)?type=design&node-id=0-1&mode=design&t=h3S8o1xilbDF6jB9-0
+    Псевдоклассы - особое состояние элемента
+        :hover - эффект при наведении
+        :active - эффект при нажатии 
+        :focus - при фокусировании, вписывании в input
 */

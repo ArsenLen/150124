@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-family: "Inter", sans-serif;
+}
 header {
     background-color: #1ABC9C;
     padding: 15px 0;
@@ -79,7 +82,37 @@ h1 {
 .project-hover-title {
     font-size: 24px;
 }
+footer {
+    padding: 80px 0;
+}
+.footer-title {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    gap: 40px; /* отступ между блоками item */
+}
+.footer-img {
+    display: block;
+    margin: auto;
+}
+.footer-item-title {
+    font-size: 24px;
+    margin: 10px 0 25px;
+    text-align: center;
+    color: #999;
+}
+.footer-text {
+    font-size: 24px;
+    text-align: center;
+}
 /*
+    text-decoration: none;
+
     height: calc(33vw * 436 / 376)
 
     Псевдоклассы:
