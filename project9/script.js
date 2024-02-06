@@ -115,7 +115,7 @@
 function checkBiggerNumber(number1, number2) {
     if(number1 > number2) {
         console.log(number1)
-    } else if(number2 > number1) {
+    } else if(number1 < number1) {
         console.log(number2)
     } else {
         console.log(number1 + " равно " + number2)
@@ -123,3 +123,7 @@ function checkBiggerNumber(number1, number2) {
 }
 
 checkBiggerNumber(10, 50)
+
+
+const arr = [10, 20, 30, 40, 50] // length = 5
+// Чтобы получить последний элемент массива нужно [length - 1]
