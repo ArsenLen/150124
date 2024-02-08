@@ -186,3 +186,10 @@ for(let i = 0; i < images.length; i++) {
     attrName - название атрибута
     attrValue - значение атрибута
 */
+
+// function numbers(x, y) {
+
+// }
+
+// numbers(10, 15) // 14, 12, 10
+// numbers(100, 90) // 100, 98, 96, 94, 92, 90
