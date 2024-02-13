@@ -117,3 +117,51 @@ for(let i = 0; i < buttons.length; i++) {
 //     console.log(a + b)
 // }
 // sum(10, 15) // immediately invoke function - немедленный вызов функции
+
+/*
+
+*/
+
+// function sum(a, b) {
+//     return a + b
+// }
+// console.log(sum(10, 15)) // 25
+
+// console.log(sum(10, 15)) // 25
+
+// const mySum = sum(10, 15) // 
+
+// // if(arr.length == 0) { return null }
+// const username = "Arsen"
+// username.length // длина строки - количество символов в строке 5
+// Создать переменную, которая будет сохранять самую длинную строку в массиве
+
+// const array = ["Arsen", "Ivan", "Kolya"]
+// let max_length = 0
+
+// function maxString() {
+//     for(let i = 0; i < array.length; i++) {
+//         // console.log(array[i].length)
+//         if(max_length < array[i].length) {
+//             max_length = array[i].length
+//         }
+//     }
+//     return max_length
+// }
+
+/*
+    i = 0, array.length = 3
+    1. i = 0, 0 < 3 - true, max_length < array[0].length, 0 < 5 - true, max_length = 5
+    2. i = 1, 1 < 3 - true, max_length < array[1].length, 5 < 4 - false, max_length = 5
+    3. i = 2, 2 < 3 - true, max_length < array[2].length, 5 < 5 - false, max_length = 5
+*/
+
+// 5, 4, 5
+
+// function sum(a, b) {
+//     return a + b
+// }
+
+// const mySum = sum(10, 15)
+
+// console.log(mySum)
