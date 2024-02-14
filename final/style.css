@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form {
+    width: 70%;
+    margin: 20px auto 60px;
+    background-color: cadetblue;
+    padding: 80px;
+    border-radius: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    font-size: 24px;
+    border: none;
+    outline: none; /* граница input при нажатии на него */
+    padding: 10px 30px;
+    margin: 20px 0;
+}
+.products {
+    width: 70%;
+    margin: auto;
+}
+.product {
+    background-color: cadetblue;
+    padding: 30px 60px;
+    border-radius: 20px;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}

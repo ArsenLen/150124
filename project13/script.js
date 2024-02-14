@@ -48,11 +48,23 @@
 
 const square = document.querySelector(".square")
 const button = document.querySelector("button")
+const greenBtn = document.querySelector(".green")
 
-button.addEventListener("click", function() {
-    square.style.backgroundColor = "red"
+// button.addEventListener("click", function() {
+//     square.style.backgroundColor = "red"
+// })
+
+// greenBtn.addEventListener("click", function() {
+//     square.style.backgroundColor = "green"
+// })
+
+const allBtns = document.querySelectorAll("button")
+allBtns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        const color = btn.getAttribute("class") // red, green
+        square.style.backgroundColor = color
+    })
 })
-
 
 // При нажатии на кнопку red менять цвет квадрата на красный
 
