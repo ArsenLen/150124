@@ -10,8 +10,8 @@
     
     <section class="form">
         <form>
-            <input type="text" class="product-name" placeholder="Название">
-            <input type="text" class="product-price" placeholder="Цена">
+            <input type="text" class="product-name" placeholder="Название" required>
+            <input type="text" class="product-price" placeholder="Цена" required>
             <input type="submit" value="Добавить">
         </form>
     </section>
@@ -23,6 +23,14 @@
         </div>
     </section>
 
+    <div class="notification">
+        <p class="notification-text">Продукт добавлен</p>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
+<!-- 
+    required - свойство input которое позволяет сделат его обязательным для заполнения
+        без ввода данных, форма не отправится
+ -->
